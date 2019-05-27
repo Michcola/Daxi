@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Michcola/Daxi/issues"
   },
-  "homepage": "https://github.com/Michcola/Daxi#readme"
+  "homepage": "https://github.com/Michcola/Daxi#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }
