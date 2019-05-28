@@ -6,12 +6,11 @@
 
 <script>
     export default {
-        name: "g-icon",
         props: ['name']
     }
 </script>
 
-<style scoped>
+<style lang="scss">
     .g-icon {
         width: 1em;
         height: 1em;
