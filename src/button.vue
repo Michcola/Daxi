@@ -13,7 +13,23 @@
 <script>
     export default {
         name: 'Button',
-        props: ['icon', 'iconPosition'],
+        //props: ['icon', 'iconPosition'],
+        props: {
+            icon: {},
+            iconPosition: {
+                type: String,
+                default: 'left',
+                //属性检查器
+                validator(value) {
+                    if (value !== 'left' || value !== 'right') {
+                        return false
+                    } else {
+                        return true
+                    }
+
+                }
+            }
+        }
     }
 </script>
 
