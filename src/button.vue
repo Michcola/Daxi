@@ -41,6 +41,7 @@
             transform: rotate(360deg)
         }
     }
+
     .g-button {
         font-size: var(--font-size);
         height: var(--button-height);
