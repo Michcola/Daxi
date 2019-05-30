@@ -43,7 +43,9 @@
     <div class="box">
         <g-input value="测试" disabled></g-input>
         <g-input value="试试" readonly></g-input>
-        <g-input value="嘻嘻嘻"></g-input>
+        <g-input v-model="message"></g-input>
+        <p>{{message}}</p>
+        <button @click="message+=1">+1</button>
     </div>
     <div class="box">
         <g-input value="啊" @change="inputChange"></g-input>
