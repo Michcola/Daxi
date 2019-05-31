@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <template>
     <div class="row" :style="rowStyle" :class="rowClass">
@@ -56,4 +57,18 @@
             justify-content: center;
         }
     }
+=======
+<template>
+    
+</template>
+
+<script>
+    export default {
+        name: "row"
+    }
+</script>
+
+<style scoped>
+
+>>>>>>> 6bff62eef7c2d72532f55015a7643bbcd21fe0b6
 </style>

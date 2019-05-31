@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <template>
     <div class="col" :class="colClass" :style="colStyle">
@@ -142,5 +143,18 @@
             }
         }
     }
+=======
+<template>
+    
+</template>
+
+<script>
+    export default {
+        name: "col"
+    }
+</script>
+
+<style scoped>
+>>>>>>> 6bff62eef7c2d72532f55015a7643bbcd21fe0b6
 
 </style>
