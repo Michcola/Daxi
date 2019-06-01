@@ -22,24 +22,31 @@
         }
 
         #app {
-            margin: 20px;
         }
 
         body {
             font-size: var(--font-size);
         }
     </style>
-    <style>
-        .box {
-            margin: 20px;
-        }
-    </style>
 </head>
 <body>
 <style>
-
+    .demo {
+        border: 1px solid #666;
+        min-height: 100px;
+    }
 </style>
 <div id="app">
+    <g-layout style="height: 100vh;">
+        <g-sider class="demo">sider</g-sider>
+
+        <g-layout>
+            <g-header class="demo">header</g-header>
+            <g-content class="demo">content</g-content>
+            <g-footer class="demo">footer</g-footer>
+
+        </g-layout>
+    </g-layout>
 
 
     <!--    <g-row>-->
