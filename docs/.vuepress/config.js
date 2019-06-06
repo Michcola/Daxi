@@ -5,12 +5,20 @@ module.exports = {
     themeConfig: {
         nav: [
             {text: '主页', link: '/'},
-            {text: '文档', link: '/guide/'},
-            {text: '交流', link: 'https://google.com'},
+            {text: '欢迎Star', link: 'https://github.com/Michcola/Daxi/'},
+            {text: 'Github', link: 'https://github.com/Michcola'},
         ],
         sidebar: [
             {
+                title: '介绍',
+                collapsable: false,
+                children: [
+                    '/introduce/',
+                ]
+            },
+            {
                 title: '入门',
+                collapsable: false,
                 children: [
                     '/install/',
                     '/get-started/',
@@ -18,6 +26,7 @@ module.exports = {
             },
             {
                 title: '组件',
+                collapsable: false,
                 children: [
                     '/components/button',
                     '/components/input',
@@ -25,7 +34,9 @@ module.exports = {
                     '/components/layout',
                     '/components/toast',
                     '/components/tabs',
-                    '/components/popover',]
+                    '/components/popover',
+                    '/components/collapse'
+                ]
             },
         ]
     }

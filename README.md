@@ -9,37 +9,20 @@
 ## 开始使用
 
 
-1. 添加 CSS 样式 
-
-    使用本框架前,请在css中开启border-box
-    
+ 1. 添加 CSS 样式,使用本框架前,请在css中开启border-box
     ```css
     *,*::before,*::after{box-sizing: border-box;}
     ```
     IE8 及以上浏览器都支持此样式~
-    
-    你还需要设置默认颜色等变量 (后续会改为SCSS变量)
-    ```css
-    html{
-        --button-height: 32px;
-        --font-size: 14px;
-        --button-bg: #fff;
-        --button-active-bg: #eee;
-        --border-radius: 4px;
-        --color: #333;
-        --border-color: #999;
-        --border-color-hover: #666;
-    }
-    
+ 2. 安装 daxi
     ```
-    IE15 及以上浏览器都支持此样式~
-    
-2. 安装 daxi
+    npm install daxi
     ```
-    npm i --save daxi
+    或者
     ```
-
-3. 引入 daxi
+    yarn add daxi
+    ```
+ 3. 引入 daxi
     ```
     import {Button,ButtonGroup,Icon} from 'daxi'
     import 'daxi/dist/index.css';
@@ -55,12 +38,12 @@
     
 
 ## 文档
-
+[官方文档](https://michcola.github.io/Daxi/)
 ## 提问
-
-## 变更记录
-
+[Issues](https://github.com/Michcola/Daxi/issues)
+## 提交记录
+[Commits](https://github.com/Michcola/Daxi/commits/master)
 ## 联系方式
-
+邮箱:[843298603@foxmail.com](mailto:843298603@foxmail.com)
 ## 贡献代码
-
+[Pull request](https://github.com/Michcola/Daxi/pulls)
