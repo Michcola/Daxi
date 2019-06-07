@@ -20,13 +20,13 @@
         name: "DaxiToast",
         props: {
             autoClose: {
-                type: Boolean,
-                default: true
+                type: [Boolean, Number],
+                default: 5,
+                validator(value) {
+                    return value === false || typeof value === 'number';
+                }
             },
-            autoCloseDelay: {
-                type: Number,
-                default: 50
-            },
+
             closeButton: {
                 type: Object,
                 default() {
@@ -71,7 +71,7 @@
                 if (this.autoClose) {
                     setTimeout(() => {
                         this.close()
-                    }, this.autoCloseDelay * 1000)
+                    }, this.autoClose * 1000)
                 }
             },
             close() {
