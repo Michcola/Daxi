@@ -21,10 +21,11 @@ An easy UI components based on Vue.
     
 </div>
 
+<div align="center">
 Daxi UI 是一个好用的 UI 框架，提供了一些常用组件，适合 PC 端和移动端使用。
 
 组件：按钮、输入框、网格、布局、Toast、Tabs、Popover、手风琴
-
+</div>
 
 ## 介绍
 
