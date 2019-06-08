@@ -1,6 +1,5 @@
 <template>
     <div class="g-toast" :class="toastClasses">
-
         <div class="toast" ref="toast">
         <div class="message">
             <slot v-if="!enableHtml"></slot>
@@ -37,7 +36,7 @@
             },
             enableHtml: {
                 type: Boolean,
-                default: true
+                default: false
             },
             position: {
                 type: String,
