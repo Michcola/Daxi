@@ -1,6 +1,30 @@
-# 达西-一个 Vue UI 组件
+
+
+<p align="center">
+  <a href="https://Michcola.github.io/Daxi/">
+    <img width="200" src="https://Michcola.github.io/Daxi/daxi.png">
+  </a>
+</p>
+
+<h1 align="center">
+  <a href="https://Michcola.github.io/Daxi/" target="_blank">Daxi-UI</a>
+</h1>
+
+<div align="center">
+
+An easy UI components based on Vue.
 
 [![Build Status](https://travis-ci.org/Michcola/Daxi.svg?branch=master)](https://travis-ci.org/Michcola/Daxi)
+[![npm package](https://img.shields.io/npm/v/daxi.svg?style=flat-square)](https://www.npmjs.com/package/daxi)
+![](https://img.shields.io/badge/language-JavaScript-yellow.svg)
+![](https://img.shields.io/badge/license-MIT-000000.svg)
+    
+</div>
+
+Daxi UI 是一个好用的 UI 框架，提供了一些常用组件，适合 PC 端和移动端使用。
+
+组件：按钮、输入框、网格、布局、Toast、Tabs、Popover、手风琴
+
 
 ## 介绍
 

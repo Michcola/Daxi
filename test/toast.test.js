@@ -53,7 +53,7 @@ describe('Toast', () => {
             let strong = vm.$el.querySelector('#test')
             expect(strong).to.exist
         })
-        it('接收position', () => {
+        it('接收 position', () => {
             const Constructor = Vue.extend(Toast)
             const vm = new Constructor({
                 propsData: {

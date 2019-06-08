@@ -1,8 +1,8 @@
 ---
-title: Grid - 网格
+title: Grid - 栅格布局
 ---
-# 网格
-Grid - 网格，通过基础的 24 分栏，迅速简便地创建网格布局，可设置 gutter 和空白，默认支持响应式。
+# 栅格
+Grid - 栅格，通过基础的 24 分栏，迅速简便地创建栅格布局，可混合布局 和分栏偏移，默认支持响应式。
 
 :::tip
 建议使用该组件推荐设置，CSS示例已更新
@@ -15,7 +15,7 @@ Grid - 网格，通过基础的 24 分栏，迅速简便地创建网格布局，
 .demoCol { height: 50px; border: 1px solid #ccc; background: #7CB8FF; display: flex; justify-content: center; align-items: center; }
 
 ```
-## 使用方法
+## 基础布局
 
 #### 浏览
 <br/>
@@ -61,7 +61,7 @@ Grid - 网格，通过基础的 24 分栏，迅速简便地创建网格布局，
 </g-row>
 </div>
 ```
-## 设置 gutter
+## 混合布局
    
 #### 浏览
 <br/>
@@ -106,7 +106,7 @@ Grid - 网格，通过基础的 24 分栏，迅速简便地创建网格布局，
 </g-row>
 
 ```
-## 设置空白
+## 分栏偏移
    
 #### 浏览
 <br/>
