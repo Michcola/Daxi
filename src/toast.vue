@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" :class="toastClasses">
+    <div class="g-toast" :class="toastClasses">
 
         <div class="toast" ref="toast">
         <div class="message">
@@ -37,7 +37,7 @@
             },
             enableHtml: {
                 type: Boolean,
-                default: false
+                default: true
             },
             position: {
                 type: String,
@@ -124,7 +124,7 @@
         }
     }
 
-    .wrapper {
+    .g-toast {
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
@@ -156,7 +156,7 @@
             transform: translateX(-50%) translateY(-50%);
 
             .toast {
-                animation: fade_in $animation-duration;
+                animation: fade-in $animation-duration;
             }
         }
     }

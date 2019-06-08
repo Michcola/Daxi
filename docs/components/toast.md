@@ -3,7 +3,7 @@ title: Toast - 弹出提示
 ---
 # Toast 弹出提示
 :::tip
-若点击按钮无显示，需要设置
+若点击按钮无显示，则需要设置
 :::
 ``` CSS
 .g-toast {
@@ -11,9 +11,11 @@ title: Toast - 弹出提示
 }
 ```
 ## 设置弹出位置
+默认顶部弹出
 
+默认5s后关闭
 #### 浏览
-#
+<br/>
 <ClientOnly>
 <toast-demo-1></toast-demo-1>
 </ClientOnly>
@@ -27,10 +29,10 @@ title: Toast - 弹出提示
     <g-button @click="$toast('点击弹出提示', {position:'bottom'})">底部弹出</g-button>
 </div>
 ```
-## 自动或手动关闭
+## 设置手动关闭
 
 #### 浏览
-#
+<br/>
 <ClientOnly>
 <toast-demo-2></toast-demo-2>
 </ClientOnly>
@@ -39,8 +41,8 @@ title: Toast - 弹出提示
 
 ``` js{4}
 methods: {
-    onClickButton () {
-        this.$toast('我不会自动关闭', {
+    onClickButton() {
+        this.$toast('需要手动关闭提示哦~', {
             autoClose: false
         })
     }
@@ -54,10 +56,10 @@ methods: {
 :::tip
 autoClsoe 取值为 false（手动关闭）或数字（几秒后自动关闭，默认为5）
 :::
-## 设置关闭按钮
+## 个性化设置
 
 #### 浏览
-#
+<br/>
 <ClientOnly>
 <toast-demo-3></toast-demo-3>
 </ClientOnly>
@@ -66,38 +68,16 @@ autoClsoe 取值为 false（手动关闭）或数字（几秒后自动关闭，�
 
 ``` js
 methods: {
-    onClickButton () {
-        this.$toast('你知道我在等你吗？', {
+    onClickButton() {
+        this.$toast('<span style="color:deepskyblue">我喜欢唱,跳,rap</span>', {
+            autoClose: false,
+            enableHTML: true,
             closeButton: {
                 text: '知道了',
                 callback: () => {
-                    console.log('他说知道了')
+                    console.log('Oops?')
                 }
             }
-        })
-    }
-}
-```
-```html
-<div>
-    <g-button @click="onClickButton">顶部弹出</g-button>
-</div>
-```
-## 支持 HTML
-
-#### 浏览
-#
-<ClientOnly>
-<toast-demo-4></toast-demo-4>
-</ClientOnly>
-
-#### 代码
-
-``` js
-methods: {
-    onClickButton() {
-        this.$toast('<span style="color:red">我会是红色的</span>', {
-            enableHTML: true
         })
     }
 }
