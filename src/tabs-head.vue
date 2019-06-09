@@ -12,10 +12,11 @@
     export default {
         name: "DaxiTabsHead",
         inject: ['eventBus'],
-        created() {
+        mounted() {
             this.eventBus.$on('update:selected', (item, vm) => {
-                console.log(item);
-                //console.log(vm);
+                let {width, height, top, left} = vm.$el.getBoundingClientRect()
+                this.$refs.line.style.width = `${width}px`
+                this.$refs.line.style.transform = `translateX(${left}px)`
             })
         }
     }
@@ -28,14 +29,13 @@
         display: flex;
         height: $tab-height;
         justify-content: flex-start;
-        border: 1px solid red;
         position: relative;
 
         > .line {
             position: absolute;
             bottom: 0;
             border-bottom: 1px solid $color;
-            width: 60px;
+            transition: all 350ms;
         }
         > .actions-wrapper {
             margin-left: auto;
