@@ -6,7 +6,11 @@
 
 <script>
     export default {
-        name: "DaxiTabsBody"
+        name: "DaxiTabsBody",
+        inject: ['eventBus'],
+        created() {
+
+        },
     }
 </script>
 
