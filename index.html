@@ -41,18 +41,24 @@
     >
 
         <g-popover position="bottom">
-            <template slot="content">
+            <template slot="content" slot-scope="{close}">
                 <div>sdfsdfsdfsdfsfsdffsdfsdfsffgrgrr</div>
                 <div>sdfsdfsdfsdfsfsdffsdfsdfsffgrgrr</div>
                 <div>sdfsdfsdfsdfsfsdffsdfsdfsffgrgrr</div>
                 <div>sdfsdfsdfsdfsfsdffsdfsdfsffgrgrr</div>
-                <div>sdfsdfsdfsdfsfsdffsdfsdfsffgrgrr</div>
+                <div>sdfsdfsdfsdfsfsdffsdfsdfsffgrgrr
+                    <a href="http://qq.com">qq网</a>
+
+                </div>
+                <g-button @click="close">关闭</g-button>
             </template>
             <g-button>点我up</g-button>
         </g-popover>
         <g-popover position="top">
             <template slot="content">
-                <div>popover内容</div>
+                <div>popover内容
+                    <g-button>下载</g-button>
+                </div>
             </template>
             <g-button>点我down</g-button>
         </g-popover>
