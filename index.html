@@ -31,12 +31,26 @@
 </head>
 <body>
 <style>
+    #app {
+        padding-top: 100px;
+        padding-left: 100px;
 
+    }
 </style>
 <div id="app">
-    <g-tabs>
-        <div>dhi</div>
-    </g-tabs>
+    <g-popover>
+        <template slot="content">
+            <div>popover内容</div>
+        </template>
+        <button>点我</button>
+    </g-popover>
+    <g-popover>
+        <template slot="content">
+            <div>popover内容</div>
+        </template>
+        <button>点我</button>
+    </g-popover>
+
     <!--    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">-->
     <!--        <g-tabs-head>-->
     <!--            <template slot="actions">-->
