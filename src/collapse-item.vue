@@ -63,6 +63,7 @@
             display: flex;
             align-items: center;
             padding: 0 8px;
+            cursor: pointer;
         }
 
         &:first-child {
