@@ -18,7 +18,7 @@
         },
         methods: {
             onClickButton() {
-                this.$toast('<span style="color:deepskyblue">我喜欢唱,跳,rap</span>', {
+                this.$toast('我喜欢唱,跳,rap', {
                     autoClose: false,
                     enableHTML: true,
                     closeButton: {

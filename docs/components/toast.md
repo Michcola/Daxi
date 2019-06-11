@@ -69,7 +69,7 @@ autoClsoe 取值为 false（手动关闭）或数字（几秒后自动关闭，�
 ``` js
 methods: {
     onClickButton() {
-        this.$toast('<span style="color:deepskyblue">我喜欢唱,跳,rap</span>', {
+        this.$toast('我喜欢唱,跳,rap', {
             autoClose: false,
             enableHTML: true,
             closeButton: {
