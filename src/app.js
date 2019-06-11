@@ -47,7 +47,7 @@ Vue.component('g-collapse-item', ClooapseItem)
 new Vue({
     el:'#app',
     data: {
-        selectedTab: 'sports'
+        selectedTab: '2'
     },
     created() {
 
