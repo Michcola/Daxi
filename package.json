@@ -27,7 +27,7 @@
   "dependencies": {
     "vue": "^2.6.10",
     "vue-hot-reload-api": "^2.3.3",
-    "vuepress": "^0.14.11"
+    "vuepress": "^1.9.7"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.0.0",
